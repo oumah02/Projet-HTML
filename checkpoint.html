@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <a href="#about">À Propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section À Propos -->
+    <section id="about">
+        <h2>À Propos de Moi</h2>
+        <div style="display: flex; align-items: center;">
+            <div style="flex: 1;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper eros eget porta porttitor. Cras ut interdum sapien. Cras ut elit leo. Donec tincidunt molestie erat et commodo. Proin efficitur gravida tellus non pretium. Praesent posuere pharetra arcu, eget semper neque gravida in. Vivamus vitae velit arcu. Pellentesque rutrum arcu nisi, eu placerat nisl blandit at. In auctor fringilla orci nec tincidunt. Nunc varius tempus lorem non convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc tincidunt scelerisque aliquet. Fusce id diam scelerisque, egestas ante non, vestibulum magna.</p>
+            </div>
+            <div style="flex: 0 0 200px;">
+                <img src="photo.png" alt="Ma photo" style="width: 100%; border-radius: 50%;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div style="flex: 1; margin: 10px; max-width: 300px;">
+                <h3>Projet 1</h3>
+                <img src="projet1.png" alt="Image du Projet 1" style="width: 100%; border-radius: 5px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper eros eget porta porttitor. Cras ut interdum sapien. Cras ut elit leo. Donec tincidunt molestie erat et commodo. Proin efficitur gravida tellus non pretium</p>
+            </div>
+            <div style="flex: 1; margin: 10px; max-width: 300px;">
+                <h3>Projet 2</h3>
+                <img src="projet2.png" alt="Image du Projet 2" style="width: 100%; border-radius: 5px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper eros eget porta porttitor. Cras ut interdum sapien. Cras ut elit leo. Donec tincidunt molestie erat et commodo. Proin efficitur gravida tellus non pretium</p>
+            </div>
+            <div style="flex: 1; margin: 10px; max-width: 300px;">
+                <h3>Projet 3</h3>
+                <img src="projet3.png" alt="Image du Projet 3" style="width: 100%; border-radius: 5px;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper eros eget porta porttitor. Cras ut interdum sapien. Cras ut elit leo. Donec tincidunt molestie erat et commodo. Proin efficitur gravida tellus non pretium</p>
+            </div>
+        </div>
+        <h3 style="text-align: center;">Vidéo Présentation</h3>
+        <div style="text-align: center;">
+            <video width="320" height="240" controls>
+                <source src="presentation.mp4" type="video/mp4">
+                Votre navigateur ne prend pas en charge la vidéo.
+            </video>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="mailto:votre-email@example.com" method="post" enctype="text/plain">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Réinitialiser">
+        </form>
+    </section>
+
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
